@@ -1,10 +1,13 @@
 let button= document.querySelector(".button");
 let container= document.querySelector(".container");
+let text= document.querySelector(".text");
 
 button.addEventListener('click',function(){
 
     let backgroundColor=rgbCalculation();
     container.parentNode.style.backgroundColor=backgroundColor;
+
+    text.textContent=backgroundColor;
 })
 
 function rgbCalculation(){
